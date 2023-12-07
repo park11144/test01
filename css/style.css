@@ -1,0 +1,53 @@
+body {
+    background-color: rgb(36, 36, 36);
+    color: #fff;
+    font-size: 45px;
+    padding:0;
+    margin: 0;
+}
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+section img {
+    width: 600px;
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px #ffffff25;
+}
+section button {
+    margin: 50px;
+    height: 40px;
+    width: 120px;
+    background-color: blue;
+    border: 0;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+section button:hover {
+    color: #000;
+    background-color: lightskyblue;
+}
+section p {
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    padding: 0px 300px;
+}
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1.5s;
+}
+
+.show {
+    filter: blur(0);
+    transform: translateX(0);
+    opacity: 1;
+}
